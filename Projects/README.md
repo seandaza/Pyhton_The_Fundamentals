@@ -40,9 +40,16 @@
                         else:
                                 print("******")
 
-    que me permiten tambien conducir el flujo correcto de la lógica en el primer caso, y en el segundo caso, muestra al usuario por consola que su debe corregir su ingreso de datos e introducir valores Positivos.
+    que nos permiten tambien conducir el flujo correcto de la lógica en el primer caso, y en el segundo caso, muestra al usuario por consola, que se debe corregir su ingreso de datos e introducir valores Positivos.
 
 
+# Solicitud de Datos por Consola
+
+La expresión
+
+                         m = int(input("Ingrese un Monto a Solicitar de Préstamo: "))
+
+Solicita por consola el ingreso de un número por parte del usuario (input); el cuál a su vez se está casteando (int) para garantizar que se guarde en la variable m como un tipo de dato entero (int), y nos permita su reutilización a la hora de hacer operaciones. Si no se castea el dato ingresado por el usuario a tipo entero, éste lo guarda por defecto en la variable m como una cadena de texto (str) y no lo podríamos reutilizar a la hora de efectuar operaciones con su valor.
 
 # Manejo de Excepciones
 
@@ -52,9 +59,9 @@ Como estamos pidiendo datos al usuario para alamcenarlos en variables que operar
                     i = float(input("Ingrese los intereses a someter el préstamo: "))
 
                 except:
-                    print("Ingresa un interés válido")
+                    print("Ingresa un interés válido. Intenta de nuevo...")
 
-De tal manera que, en caso de que el usuario ingrese un dato no válido, se mostrará al usuario por consola una alerta de que ingresó un dato inválido y que debe reingresarlo de nuevo.
+De tal manera que, en caso de que el usuario ingrese un dato no válido, se mostrará al usuario por consola una alerta de que ingresó un dato inválido y debe reingresarlo de nuevo.
 
 
 # La Función Calculadora ()
@@ -66,4 +73,4 @@ Se define al inicio del código y recibe como parámetros justamente las variabl
 
                                             return  round((m/t)(1 + i/100),2)
 
-Note que esta función dentro de nuestro flujo de código, se invoca en la linea 28 y sus parámetros son los que justamente hemos guardado en las variables m,t e i y que fueron pedidos como datos de ingreso al usuario interesado en el préstamo.
+Note que esta función dentro de nuestro flujo de código, se invoca en la linea 28, y sus parámetros son los que justamente hemos guardado en las variables m,t e i y que fueron pedidos como datos de ingreso al usuario interesado en el préstamo.
