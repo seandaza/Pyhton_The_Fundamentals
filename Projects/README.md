@@ -59,11 +59,11 @@ De tal manera que, en caso de que el usuario ingrese un dato no flotante, se mos
 
 # La Función Calculadora ()
 
-Se define al inicio del código y recibe como parámetros justamente las variables monto, tiempo e interés. Esta función retorna la expresion que ya explicamos en la linea 14 de este documento.
+Se define al inicio del código y recibe como parámetros justamente las variables monto, tiempo e interés. Esta función retorna la expresión que ya explicamos en el punto 3 de la sección de Expresiones Algebraicas y su Significado de este documento, pero redondeada a lo sumo en 2 decimales, para evitar confusiones en casos de cocientes que impliquen expresiones decimales largas.
 
 
                                 def Calculadora(monto,tiempo, interes):
 
-                                            return  (m/t)(1 + i/100)
+                                            return  round((m/t)(1 + i/100),2)
 
-Note que esta función dentro de nuestro flujo de código, se invoca en la linea 31 y sus parámetros son los que justamente hemos guardado en las variables m,t e i y que fueron pedidos como datos de ingreso al usuario interesado en el préstamo.
+Note que esta función dentro de nuestro flujo de código, se invoca en la linea 28 y sus parámetros son los que justamente hemos guardado en las variables m,t e i y que fueron pedidos como datos de ingreso al usuario interesado en el préstamo.

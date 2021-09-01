@@ -5,27 +5,24 @@ Debe incorporar una funcion implicita que reciba al monto del prestamo, al tiemp
 
 def Calculadora(monto,tiempo,interes):
     
-    return  (monto/tiempo)*(interes/100 + 1)   
+    return  round((monto/tiempo)*(interes/100 + 1),2)
 
 while True:
     try:
             m = int(input("Ingrese un Monto a Solicitar de Prestamo: "))
             if m > 0:
-                print("________________________________________________")
                 print("Su monto de solicitud credito es de",m,"$\n")
 
                 while True:
                     try:
                         t = int(input("Ingrese la cantidad de meses de plazo para pagar: "))
                         if t > 0:
-                            print("________________________________________________")
                             print("Plazo de",t,"meses para pagar\n")
 
                             while True:
                                 try:
                                     i = float(input("Ingrese los Intereses a someter el prestamo: "))
                                     if i > 0:
-                                        print("________________________________________________")
                                         print("Los intereses a cobrar por cada mes son de: ",i,"%\n")
                                         print("________________________________________________________________________________________")
                                         print("Ud debe pagar mensualmente un monto de",Calculadora(m,t,i),"$ por un total de",t,"meses")
