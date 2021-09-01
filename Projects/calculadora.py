@@ -29,16 +29,16 @@ while True:
                                         print("________________________________________________________________________________________")
                                         break
                                     else:
-                                        print("Los intereses den ser positivos!")
+                                        print("Los intereses den ser positivos!. Intenta de nuevo...")
                                 except:
-                                    print("Ingresa un monto de interes valido!")
+                                    print("Ingresa un monto de interes valido!. Intenta de nuevo...")
                             break
                         else:
-                            print("El plazo debe ser un numero entero positivo!")
+                            print("El plazo debe ser un numero entero positivo!. Intenta de nuevo...")
                     except:
-                        print("Ingresa un Plazo valido")
+                        print("Ingresa un Plazo valido. Intenta de nuevo...")
                 break
             else:
-                print("El monto a solcitar debe ser Positivo! Intente de nuevo...")
+                print("El monto a solcitar debe ser Positivo!. Intenta de nuevo...")
     except:
         print("Oops! Ese no es un monto valido!. Intenta de nuevo...")

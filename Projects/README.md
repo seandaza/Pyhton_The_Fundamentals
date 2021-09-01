@@ -31,7 +31,7 @@
 
                         while True 
 
-    que permite la usuario volver a intentar el ciclo de operaciones hasta que lo haga de manera correcta.
+    que permite al usuario volver a intentar el ciclo de operaciones hasta que lo haga de manera correcta.
 
 2) De manera anidada se manejan condicionales del tipo
 
@@ -40,21 +40,21 @@
                         else:
                                 print("******")
 
-    que me permiten tambien conducir el flujo correcto de la lógica en el primer caso, y en el segundo caso, muestra al usuario por consola que su debe corregir su ingreso de datos
+    que me permiten tambien conducir el flujo correcto de la lógica en el primer caso, y en el segundo caso, muestra al usuario por consola que su debe corregir su ingreso de datos e introducir valores Positivos.
 
 
 
 # Manejo de Excepciones
 
-Como estamos pidiendo datos al usuario para alamcenarlos en variables que operaremos internamente a través de cálculos; debemos evitar que el usuario ingrese datos NO válidos, que puedan incurrir en errores internos en el flujo de nuestra lógica operacional. Para ello, usamos la siguiente estructura de datos:
+Como estamos pidiendo datos al usuario para alamcenarlos en variables que operaremos internamente a través de cálculos; debemos evitar que el usuario ingrese datos NO válidos (como símbolos o letras), que puedan incurrir en errores internos en el flujo de nuestra lógica operacional. Para ello, usamos la siguiente estructura de datos:
 
                 try:
                     i = float(input("Ingrese los intereses a someter el préstamo: "))
 
                 except:
-                    print("Ingresa un interes válido")
+                    print("Ingresa un interés válido")
 
-De tal manera que, en caso de que el usuario ingrese un dato no flotante, se mostrará al usuario por consola que el dato ingresado no es válido
+De tal manera que, en caso de que el usuario ingrese un dato no válido, se mostrará al usuario por consola una alerta de que ingresó un dato inválido y que debe reingresarlo de nuevo.
 
 
 # La Función Calculadora ()
