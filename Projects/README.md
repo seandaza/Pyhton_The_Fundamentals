@@ -44,7 +44,7 @@
 
 
 
-# Manejo de Excepeciones
+# Manejo de Excepciones
 
 Como estamos pidiendo datos al usuario para alamcenarlos en variables que operaremos internamente a través de cálculos; debemos evitar que el usuario ingrese datos NO válidos, que puedan incurrir en errores internos en el flujo de nuestra lógica operacional. Para ello, usamos la siguiente estructura de datos:
 
@@ -57,7 +57,7 @@ Como estamos pidiendo datos al usuario para alamcenarlos en variables que operar
 De tal manera que, en caso de que el usuario ingrese un dato no flotante, se mostrará al usuario por consola que el dato ingresado no es válido
 
 
-# La Funcion Calculadora ()
+# La Función Calculadora ()
 
 Se define al inicio del código y recibe como parámetros justamente las variables monto, tiempo e interés. Esta función retorna la expresion que ya explicamos en la linea 14 de este documento.
 
