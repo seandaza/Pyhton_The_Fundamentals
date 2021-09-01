@@ -1,4 +1,4 @@
-# Detalles de la Calculadora Porcentual de Prestamos
+# Detalles de la Calculadora Porcentual de Préstamos
 
 # Variables de la Función
 1)   m = Monto a Solicitar de Prestamo.
