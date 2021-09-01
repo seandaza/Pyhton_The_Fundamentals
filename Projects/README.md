@@ -1,17 +1,23 @@
 # Detalles de la Calculadora Porcentual de Prestamos
 
-# Variables de la Funcion
+# Variables de la Función
 1) m = Monto a Solicitar de Prestamo.
 2) t  = Plazos en meses en los que se dispone pagar el préstamo.
 3) i = Tasa de interés a la que se someterá el préstamo mensualmente.
 
 # Expresiones Algebraicas y su Significado
 
-1)  m/t  Representa el monto a pagar bruto por mes.
+1)  Representa el monto a pagar bruto por mes.
 
-2)  (m/t)* i/100  Representa el porcentaje a pagar por concepto de interés bruto por mes.
+                    m/t 
 
-3)  (m/t) + (m/t)* i/100  Representa el monto a pagar por mes MAS el interes del mismo.
+2)  Representa el porcentaje a pagar por concepto de interés bruto por mes.
+
+                            (m/t)* i/100
+
+3)  Representa el monto a pagar por mes MAS el interes del mismo.
+
+                    (m/t) + (m/t)* i/100
 
     esta ultima expresión se puede factorizar sacando factor común y se obtiene:
 
